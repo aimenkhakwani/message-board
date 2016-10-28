@@ -22,3 +22,38 @@ h1 {
 .question-author {
   font-size: 14px;
 }
+
+/*-------------  Admin ------------*/
+.intro-title {
+  font-size: 18px;
+  color: #666;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.question-btn {
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  color: #B10F2E;
+}
+.question-btn:hover {
+  color: #570000;
+}
+.admin-intro {
+  text-align: center;
+}
+.admin-intro h3 {
+  margin-top: -3px;
+  font-size: 22px;
+}
+.new-question-form {
+  padding-bottom: 20px;
+}
+.new-question-form h3 {
+  color: #B10F2E;
+}
+.admin-tiles {
+  box-shadow: 1px 1px 5px #f2f2f2;
+  border: 2px dashed #d9d9d9;
+  padding: 20px;
+}
