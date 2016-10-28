@@ -1,7 +1,7 @@
 body{
   font-family: 'Gentium Basic', serif;
 }
-h1 {
+h1, h2 {
   text-align: center;
 }
 .nav {
@@ -27,6 +27,19 @@ h1 {
   color: #B10F2E;
   text-decoration: none;
 }
+.answer-form, .new-question-form {
+  width: 60%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #d9d9d9;
+  margin-left: 20%;
+  margin-bottom: 50px;
+  background-color: #f2f2f2;
+}
+.new-question-form {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
 
 /*----- Individual Question Page ----*/
 .question-page {
@@ -39,7 +52,28 @@ h1 {
 .question-page p {
   font-size: 18px;
 }
-
+.answer {
+    /*border: 1px solid #000;*/
+    /*box-shadow: 3px 3px 5px #f2f2f2;*/
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2
+}
+.user {
+  font-size: 12px;
+  font-style: italic;
+}
+.reply {
+  font-size: 18px;
+  padding-left: 20px;
+}
+.answer-bt {
+  background: transparent;
+  border: none;
+  color: #B10F2E;
+  font-style: italic;
+  font-size: 18px;
+}
 
 /*-------------  Admin ------------*/
 .intro-title {
