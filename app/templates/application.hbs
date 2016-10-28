@@ -1,12 +1,12 @@
 <header>
   <div class="nav row">
-    <div class="col-md-4 col-md-offset-4">
+    <div class="title col-md-4 col-md-offset-4">
       {{#link-to 'index'}}<h1 class="header-title">Message Board</h1>{{/link-to}}
     </div>
     <div class="col-md-4">
         {{#link-to 'admin'}}<li class="nav-links">Admin</li>{{/link-to}}
-        <li class="nav-links">About</li>
-        <li class="nav-links">Contact</li>
+        {{#link-to 'index'}}<li class="nav-links">About</li>{{/link-to}}
+        {{#link-to 'index'}}<li class="nav-links">Home</li>{{/link-to}}
     </div>
   </div>
 </header>
