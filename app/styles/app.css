@@ -10,22 +10,22 @@ h1, h2 {
 .nav-links {
   float: right;
   padding-right: 30px;
-  padding-top: 30px;
-  font-size: 18px;
-  color: #280000;
-}
-.nav-links:hover{
+  padding-top: 23px;
+  font-size: 20px;
   color: #B10F2E;
 }
-.title a, .each-question a {
+.title a, .each-question a:hover, .nav-links:hover {
   color: #280000;
 }
 .question-author {
   font-size: 14px;
 }
-.each-question a:hover, .title a:hover {
+.title a:hover {
   color: #B10F2E;
   text-decoration: none;
+}
+.each-question a {
+  color: #8d0c24;
 }
 .answer-form, .new-question-form {
   width: 60%;
