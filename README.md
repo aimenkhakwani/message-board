@@ -1,7 +1,7 @@
 # Message Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a message board app made in Ember. It has a user side that displays all questions, and allows user to answer other peoples questions. There is also an admin side that allows for new questions, as well as CRUD functionality for all questions. This web app demonstrates a one-to-many relationship in Ember, and uses Firebase for the database.
+<img src="public/assets/img/screenshot.png" alt="a screenshot of the site">
 
 ## Prerequisites
 

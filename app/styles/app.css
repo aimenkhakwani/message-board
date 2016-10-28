@@ -16,6 +16,7 @@ h1, h2 {
 }
 .title a, .each-question a:hover, .nav-links:hover {
   color: #280000;
+  text-decoration: none;
 }
 .question-author {
   font-size: 14px;
@@ -74,13 +75,13 @@ h1, h2 {
   font-style: italic;
   font-size: 18px;
 }
-
 /*-------------  Admin ------------*/
 .intro-title {
   font-size: 18px;
   color: #666;
   padding-left: 0px;
   margin-left: 0px;
+  text-align: left;
 }
 .question-btn {
   background: transparent;
