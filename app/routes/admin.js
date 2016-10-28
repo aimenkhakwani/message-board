@@ -8,7 +8,7 @@ export default Ember.Route.extend({
     saveQuestion(params) {
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
-      this.transitionTo('index');
+      this.transitionTo('admin');
     },
     update(question, params) {
       Object.keys(params).forEach(function(key) {
@@ -17,6 +17,10 @@ export default Ember.Route.extend({
         }
       });
       question.save();
+      this.transitionTo('admin');
+    },
+    destroyQuestion(question) {
+      question.destroyRecord();
       this.transitionTo('admin');
     }
   }

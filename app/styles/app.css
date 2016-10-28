@@ -57,3 +57,15 @@ h1 {
   border: 2px dashed #d9d9d9;
   padding: 20px;
 }
+.edit, .delete {
+  background: transparent;
+  border: none;
+  margin-top: -50px;
+  padding: 18px;
+}
+.delete {
+  color: red;
+}
+.edit {
+  color: blue;
+}

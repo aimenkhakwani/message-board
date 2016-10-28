@@ -1,5 +1,10 @@
 <div class="each-question">
   <h3>{{question.authorQ}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong></span></h3>
-  {{update-question question=question update="update"}}
+  <div class="edit-delete">
+    <h5>
+      {{update-question question=question update="update"}}
+      <button class="delete pull-right" {{action 'delete' question}}>(Delete)</button>
+    </h5>
+  </div>
   <br>
 </div>
