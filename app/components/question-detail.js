@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     likeAnswer(answer, params){
       Object.keys(params).forEach(function(key) {
         if(params[key]!== undefined) {
-          answer.incrementProperty(key,params[key]);
+          answer.incrementProperty('like',1);
         }
       });
       answer.save();
