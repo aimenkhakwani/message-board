@@ -54,8 +54,6 @@ h1, h2 {
   font-size: 18px;
 }
 .answer {
-    /*border: 1px solid #000;*/
-    /*box-shadow: 3px 3px 5px #f2f2f2;*/
     padding: 15px;
     margin-bottom: 15px;
     background-color: #f2f2f2
@@ -74,6 +72,16 @@ h1, h2 {
   color: #B10F2E;
   font-style: italic;
   font-size: 18px;
+}
+.like-btn {
+  background: transparent;
+  border: none;
+}
+.like-btn:hover {
+  color: red;
+}
+.right {
+  float: right;
 }
 /*-------------  Admin ------------*/
 .intro-title {
