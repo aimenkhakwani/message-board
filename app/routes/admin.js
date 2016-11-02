@@ -17,7 +17,7 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      this.transitionTo('admin');
+      this.transitionTo('question');
     },
     destroyQuestion(question) {
       question.destroyRecord();

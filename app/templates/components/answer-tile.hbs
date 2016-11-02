@@ -1,4 +1,7 @@
 <div class="answer">
   <p class="user">{{answer.user}} said</p>
   <p class="reply">{{answer.reply}}</p>
+  <p>Likes: {{answer.like}}</p>
+  <button {{action 'likeAnswer' answer question}} class="btn btn-success">Like</button>
+  <br>
 </div>
