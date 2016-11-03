@@ -7,6 +7,12 @@ export default Ember.Component.extend({
         like: this.incrementProperty('like', 1)
       };
       this.sendAction('likeAnswer', answer, params);
+    },
+    dislikeAnswer(answer) {
+      var params = {
+        dislike: this.incrementProperty('dislike', 1)
+      };
+      this.sendAction('dislikeAnswer', answer, params);
     }
   }
 });
