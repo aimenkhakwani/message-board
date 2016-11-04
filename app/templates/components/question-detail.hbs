@@ -1,9 +1,9 @@
 <h2>{{question.authorQ}} <span class="question-author">asked by <strong>{{question.author}}</strong> {{moment-from-now question.date}}</span></h2>
 <p>{{question.notes}}</p>
+{{new-answer saveAnswer="saveAnswer" likeAnswer="likeAnswer" dislikeAnswer="dislikeAnswer" question=question}}
 <hr>
 <div>
   {{#each sortedAnswers as |answer|}}
     {{answer-tile answer=answer likeAnswer="likeAnswer" dislikeAnswer="dislikeAnswer"}}
   {{/each}}
-  {{new-answer saveAnswer="saveAnswer" likeAnswer="likeAnswer" dislikeAnswer="dislikeAnswer" question=question}}
 </div>

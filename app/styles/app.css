@@ -172,3 +172,8 @@ h1, h2 {
   color: #280000;
   text-decoration: none;
 }
+.message {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 20px;
+}
