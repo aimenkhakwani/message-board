@@ -1,11 +1,18 @@
 <h2 class="intro-title">Flagged Questions</h2>
-<br>
-<div class="flag-intro">
-  <h3>Your Flagged Questions!</h3>
-</div>
-<br>
-<div class="admin-tiles">
-  {{#each flagQuestions.questions as |question|}}
-    <h3>{{question.authorQ}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong></span></h3>
-  {{/each}}
+<div class="flag-page">
+  {{#if flagQuestions.questions}}
+    <br>
+    <div class="flag-intro">
+      <h3>Your Flagged Questions!</h3>
+    </div>
+    <br>
+    <div class="flag-tiles">
+      {{#each flagQuestions.questions as |question|}}
+        <h3>{{question.authorQ}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong></span></h3>
+        <button class="delete pull-right" {{action 'remove' question}}><i class="fa fa-trash" aria-hidden="true"></i></button>
+      {{/each}}
+    </div>
+  {{else}}
+    <h4>You have not flagged any questions</h4>
+  {{/if}}
 </div>

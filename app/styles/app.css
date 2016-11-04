@@ -154,3 +154,13 @@ h1, h2 {
 .flag-btn:hover {
   color: #000;
 }
+
+.flag-tiles {
+  box-shadow: 1px 1px 5px #f2f2f2;
+  border: 2px dashed #d9d9d9;
+  padding: 20px;
+  min-height: 80px;
+}
+.flag-page h4 {
+  text-align: center;
+}
