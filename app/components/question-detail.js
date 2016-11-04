@@ -2,12 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    likeAnswer(answer, params){
+    likeAnswer(answer){
       answer.incrementProperty('like',1);
       answer.save();
     },
-    dislikeAnswer(answer, params){
-      console.log(params)
+    dislikeAnswer(answer){
       answer.incrementProperty('dislike',1);
       answer.save();
     }

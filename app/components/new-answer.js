@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   addNewAnswer: false,
@@ -12,7 +13,8 @@ export default Ember.Component.extend({
        reply: this.get('reply'),
        question: this.get('question'),
        like: this.set('like', 0),
-       dislike: this.set('dislike', 0)
+       dislike: this.set('dislike', 0),
+       date: moment()
      };
      this.set('addNewAnswer', false);
      this.sendAction('saveAnswer', params);

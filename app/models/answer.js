@@ -5,5 +5,6 @@ export default DS.Model.extend({
   reply: DS.attr(),
   like: DS.attr('number'),
   dislike: DS.attr('number'),
+  date: DS.attr('string'),
   question: DS.belongsTo('question', {async: true})
 });
