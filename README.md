@@ -1,7 +1,7 @@
 # Message Board
 
 This is a message board app made in Ember. It has a user side that displays all questions, and allows user to answer other peoples questions. Each answer also has a 'like' property, for users to like an answer. There is also an admin side that allows for new questions, as well as CRUD functionality for all questions. This web app demonstrates a one-to-many relationship in Ember, and uses Firebase for the database.
-<br>
+####
 <img src="public/assets/img/screenshot.png" alt="a screenshot of the site">
 
 ## Prerequisites
