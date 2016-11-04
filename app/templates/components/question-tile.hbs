@@ -1,4 +1,5 @@
 <div class="each-question well">
+  <button class="flag-btn pull-right" {{action 'flag' question}}><span class="glyphicon glyphicon-flag"></span></button>
   <h3>{{unansweredQuestion question}} {{#link-to 'question' question.id}}{{question.authorQ}}{{/link-to}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong> {{moment-from-now question.date}}</span></h3>
   <h4>{{question.notes}}</h4>
 </div>

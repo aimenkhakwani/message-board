@@ -1,0 +1,11 @@
+<h2 class="intro-title">Flagged Questions</h2>
+<br>
+<div class="flag-intro">
+  <h3>Your Flagged Questions!</h3>
+</div>
+<br>
+<div class="admin-tiles">
+  {{#each flagQuestions.questions as |question|}}
+    <h3>{{question.authorQ}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong></span></h3>
+  {{/each}}
+</div>
