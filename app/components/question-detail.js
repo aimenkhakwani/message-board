@@ -11,6 +11,9 @@ export default Ember.Component.extend({
     dislikeAnswer(answer){
       answer.incrementProperty('dislike',1);
       answer.save();
+    },
+    saveAnswer(params) {
+      this.sendAction('saveAnswer', params);
     }
   }
 });

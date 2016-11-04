@@ -161,6 +161,14 @@ h1, h2 {
   padding: 20px;
   min-height: 80px;
 }
-.flag-page h4 {
+.flag-intro h3 {
   text-align: center;
+  color: #000;
+}
+.flag-tiles a {
+  color: #8d0c24;
+}
+.flag-tiles a:hover {
+  color: #280000;
+  text-decoration: none;
 }

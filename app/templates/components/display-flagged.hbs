@@ -8,7 +8,7 @@
     <br>
     <div class="flag-tiles">
       {{#each flagQuestions.questions as |question|}}
-        <h3>{{question.authorQ}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong></span></h3>
+        <h3>{{#link-to 'question' question.id}}{{question.authorQ}}{{/link-to}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong></span></h3>
         <button class="delete pull-right" {{action 'remove' question}}><i class="fa fa-trash" aria-hidden="true"></i></button>
       {{/each}}
     </div>
