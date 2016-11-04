@@ -1,4 +1,4 @@
 <div class="each-question well">
-  <h3>{{#link-to 'question' question.id}}{{question.authorQ}}{{/link-to}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong> {{moment-from-now question.date}}</span></h3>
+  <h3>{{unansweredQuestion question}} {{#link-to 'question' question.id}}{{question.authorQ}}{{/link-to}}<span class="question-author"> &nbsp; asked by <strong>{{question.author}}</strong> {{moment-from-now question.date}}</span></h3>
   <h4>{{question.notes}}</h4>
 </div>
