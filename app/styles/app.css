@@ -159,7 +159,7 @@ h1, h2 {
   box-shadow: 1px 1px 5px #f2f2f2;
   border: 2px dashed #d9d9d9;
   padding: 20px;
-  min-height: 80px;
+  padding-bottom: 30px;
 }
 .flag-intro h3 {
   text-align: center;
@@ -176,4 +176,13 @@ h1, h2 {
   text-align: center;
   margin-top: 35px;
   font-size: 20px;
+}
+.delete-flag {
+  background: transparent;
+  border: none;
+  margin-top: -50px;
+  padding: 18px;
+}
+.delete-flag:hover {
+  color: red;
 }
