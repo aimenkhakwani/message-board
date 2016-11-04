@@ -1,8 +1,8 @@
-<h2>{{question.authorQ}} <span class="question-author">asked by {{question.author}} {{moment-from-now question.date}}</span></h2>
+<h2>{{question.authorQ}} <span class="question-author">asked by <strong>{{question.author}}</strong> {{moment-from-now question.date}}</span></h2>
 <p>{{question.notes}}</p>
 <hr>
 <div>
-  {{#each question.answers as |answer|}}
+  {{#each sortedAnswers as |answer|}}
     {{answer-tile answer=answer likeAnswer="likeAnswer" dislikeAnswer="dislikeAnswer"}}
   {{/each}}
 </div>

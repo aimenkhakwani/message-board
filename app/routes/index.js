@@ -6,5 +6,7 @@ export default Ember.Route.extend({
       questions: this.store.findAll('question'),
       answers: this.store.findAll('answer')
     });
-  },
+  }
+  // sortBy: ['date:desc'],
+  // sortedQuestions: Ember.computed.sort('model.question', 'sortBy')
 });
