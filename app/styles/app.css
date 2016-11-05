@@ -148,11 +148,17 @@ h1, h2 {
 .flag-btn {
   background: transparent;
   border: none;
-  color: #B10F2E;
+  color: #000;
 }
 
 .flag-btn:hover {
-  color: #000;
+  color: #B10F2E;
+}
+
+.flagged-btn {
+  background: transparent;
+  border: none;
+  color: #B10F2E;
 }
 
 .flag-tiles {

@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   actions: {
     flag(question) {
       this.get('flagQuestions').flag(question);
+    },
+    remove(question) {
+      this.get('flagQuestions').remove(question);
     }
   }
 });
