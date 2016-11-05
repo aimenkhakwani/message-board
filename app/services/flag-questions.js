@@ -4,7 +4,11 @@ export default Ember.Service.extend({
   questions: [],
 
   flag(question) {
-    this.get('questions').pushObject(question);
+    if(this.get('questions').includes(question)) {
+      alert("You have already flagged this question");
+    } else {
+      this.get('questions').pushObject(question);
+    }
   },
   remove(question) {
     this.get('questions').removeObject(question);
